@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer {
+    html {
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
 .nam-topmenu-expanded {
     @apply absolute top-10 z-50 w-full text-center bg-white animate-slideDown;
 }

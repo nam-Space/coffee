@@ -573,10 +573,6 @@ video {
   margin-right: 1rem;
 }
 
-.ml-16{
-  margin-left: 4rem;
-}
-
 .mb-24{
   margin-bottom: 6rem;
 }
@@ -796,6 +792,10 @@ video {
   gap: 3rem;
 }
 
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+
 .border-\[1px\]{
   border-width: 1px;
 }
@@ -935,9 +935,9 @@ video {
      object-fit: cover;
 }
 
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .py-6{
@@ -945,14 +945,19 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+.px-0{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-2{
@@ -968,6 +973,15 @@ video {
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.pl-3{
+  padding-left: 0.75rem;
 }
 
 .pl-0{
@@ -1134,6 +1148,12 @@ video {
 
 .duration-500{
   transition-duration: 500ms;
+}
+
+@layer {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 .nam-topmenu-expanded{
@@ -1418,6 +1438,26 @@ video {
   animation: fadeIn 0.4s ease-in-out;
 }
 
+@media (min-width: 350px){
+  .superSm\:ml-16{
+    margin-left: 4rem;
+  }
+
+  .superSm\:basis-1\/6{
+    flex-basis: 16.666667%;
+  }
+
+  .superSm\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .superSm\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
 @media (min-width: 480px){
   .xs\:mb-5{
     margin-bottom: 1.25rem;
@@ -1433,6 +1473,11 @@ video {
 
   .xs\:gap-5{
     gap: 1.25rem;
+  }
+
+  .xs\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .xs\:px-0{
